@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vton.nativeapp",
+      "sha256_cert_fingerprints": [
+        "D6:FE:49:07:4D:EC:7C:0D:12:A3:D6:E7:CB:80:C7:4D:D9:93:A9:8F:DA:A7:E0:07:BC:A5:0B:BB:43:C6:A8:D8"
+      ]
+    }
+  }
+]
