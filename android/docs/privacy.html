@@ -1,10 +1,47 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Virtual Try-On Privacy Policy</title>
-<h1>Privacy Policy</h1><p><strong>Last updated: 2026-08-02.</strong> Virtual Try-On processes account, catalog, and photos to provide virtual try-on and commerce features.</p>
-<h2>Data and purposes</h2><ul><li>Account identifiers and authentication data: sign-in, security, and account support.</li><li>Person and garment photos: try-on processing and saved wardrobe/catalog features, only after the requested action.</li><li>Purchase tokens and product IDs: server-side Google Play purchase verification and entitlement fulfilment. We do not put service-account credentials in the app.</li><li>Diagnostics and abuse-prevention signals: reliability, rate limiting, and fraud prevention.</li></ul>
-<h2>Adults-only image policy</h2><p>The AI Try-On service is intended only for users aged 18 or older. Before cloud processing, users must confirm that they are at least 18 and will upload only their own image or an image they are authorized to use. Images of minors and sensitive images are prohibited. We use content-safety and single-person checks to reduce misuse, but we do not claim to verify identity or exact age from a face and we do not collect identity documents for age verification.</p>
-<h2>Processors and retention</h2><p>Supabase provides authentication, database, and controlled API storage. Modal runs requested inference jobs. Cloudflare R2 stores media objects under access-controlled keys. Google Play processes purchases. Android SDKs (including MediaPipe and ONNX Runtime) process applicable images on-device.</p><ul><li>Completed AI Try-On job records and stored result objects are scheduled for deletion after 30 days. User-requested deletion may remove them sooner where legally possible.</li><li>AI result reports are retained for up to 24 months for safety, abuse review, and dispute handling.</li><li>Commerce idempotency records are retained for 7 days and rate-limit state for 2 days.</li><li>Purchase, entitlement, refund, fraud-prevention, and transaction records are retained only for applicable legal, accounting, refund, dispute, and security obligations, with access restricted.</li><li>Account and profile data remain while the account is active and are deleted or irreversibly de-identified after a verified deletion request, except for the restricted records described above. Backups expire through their normal rotation.</li></ul>
-<h2>Sharing and rights</h2><p>We do not sell personal data. We disclose data only to the processors above, service providers needed for the requested feature, or when legally required. You may access, correct, export, or delete your account and request deletion of associated personal data. Catalog imagery must have documented commercial rights; see the release catalog-rights manifest.</p>
-<h2>Affiliate disclosure</h2><p>Some catalog or merchant links may be affiliate links. If you buy through one, we may receive a commission at no extra cost to you. Affiliate status never changes ranking, eligibility, or price.</p>
-<h2>Contact and deletion</h2><p>For privacy requests, use the <a href="account-deletion.html">account deletion page</a> or contact the publisher through the support address shown in the Google Play listing. Requests are verified to protect the account owner.</p>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tryvo – AI Virtual Try-On | Chính sách quyền riêng tư</title>
+</head>
+<body>
+  <h1>Chính sách quyền riêng tư của Tryvo – AI Virtual Try-On</h1>
+  <p><strong>Cập nhật lần cuối: 12/08/2026.</strong> Tryvo xử lý dữ liệu tài khoản, danh mục và ảnh để cung cấp tính năng thử đồ ảo, chỉnh sửa, tủ đồ và mua sắm.</p>
+
+  <h2>Dữ liệu và mục đích xử lý</h2>
+  <ul>
+    <li>Địa chỉ email, ID người dùng và dữ liệu xác thực: đăng nhập, bảo mật và hỗ trợ tài khoản.</li>
+    <li>Ảnh người, ảnh trang phục và kết quả tạo ra: xử lý yêu cầu AI Try-On, lưu dự án hoặc tủ đồ khi người dùng chủ động thực hiện.</li>
+    <li>Mã sản phẩm, mã giao dịch và purchase token của Google Play: xác minh giao dịch phía máy chủ, cấp quyền Pro/Plus hoặc lượt mua thêm và xử lý hoàn tiền. Tryvo không nhận số thẻ thanh toán.</li>
+    <li>Dữ liệu chẩn đoán và tín hiệu chống lạm dụng đã giới hạn: độ ổn định, giới hạn tần suất, bảo mật và phòng chống gian lận.</li>
+    <li>Dữ liệu đơn hàng, liên hệ và tin nhắn mua sắm khi người dùng sử dụng các tính năng thương mại tương ứng.</li>
+  </ul>
+
+  <h2>Ảnh và dịch vụ AI dành cho người trưởng thành</h2>
+  <p>AI Try-On dành cho người từ 18 tuổi trở lên. Trước khi xử lý trên đám mây, người dùng phải xác nhận chỉ tải ảnh của mình hoặc ảnh được phép sử dụng. Không tải ảnh trẻ vị thành niên, ảnh nhạy cảm hoặc ảnh không có quyền sử dụng. Tryvo có thể áp dụng kiểm tra an toàn nội dung và một người trong ảnh để giảm lạm dụng, nhưng không xác minh danh tính hay tuổi chính xác từ khuôn mặt và không thu thập giấy tờ tùy thân để xác minh tuổi.</p>
+
+  <h2>Nhà cung cấp dịch vụ và thời hạn lưu giữ</h2>
+  <p>Supabase cung cấp xác thực, cơ sở dữ liệu, API và lưu trữ có kiểm soát; Modal thực hiện tác vụ AI theo yêu cầu; Cloudflare R2 lưu trữ media bằng khóa truy cập có kiểm soát; Google Play xử lý thanh toán; MediaPipe, TensorFlow Lite và ONNX Runtime xử lý các bước áp dụng trên thiết bị.</p>
+  <ul>
+    <li>Công việc AI Try-On đã hoàn tất và kết quả lưu trữ được lên lịch xóa sau 30 ngày, hoặc sớm hơn sau yêu cầu xóa hợp lệ khi pháp luật cho phép.</li>
+    <li>Báo cáo kết quả AI có thể được giữ tối đa 24 tháng cho an toàn, chống lạm dụng và giải quyết tranh chấp.</li>
+    <li>Hồ sơ giao dịch, quyền lợi, hoàn tiền và chống gian lận chỉ được giữ trong thời hạn kế toán, pháp lý, hoàn tiền, tranh chấp hoặc bảo mật áp dụng và bị giới hạn quyền truy cập.</li>
+    <li>Dữ liệu tài khoản tồn tại khi tài khoản hoạt động; sau yêu cầu xóa đã xác minh, dữ liệu được xóa hoặc khử định danh không thể đảo ngược, trừ hồ sơ bắt buộc phải giữ. Bản sao lưu hết hạn theo chu kỳ luân chuyển bình thường.</li>
+  </ul>
+
+  <h2>Chia sẻ, bảo mật và quyền của người dùng</h2>
+  <p>Tryvo không bán dữ liệu cá nhân. Dữ liệu chỉ được cung cấp cho các bên xử lý nêu trên, nhà cung cấp cần thiết cho tính năng người dùng yêu cầu, hoặc khi pháp luật yêu cầu. Dữ liệu được truyền qua HTTPS. Người dùng có thể yêu cầu truy cập, sửa, xuất hoặc xóa tài khoản và dữ liệu liên quan.</p>
+
+  <h2>Liên kết mua sắm và affiliate</h2>
+  <p>Một số liên kết sản phẩm hoặc người bán có thể là liên kết affiliate. Tryvo có thể nhận hoa hồng nếu người dùng mua hàng qua liên kết đó mà không làm tăng giá. Trạng thái affiliate không thay đổi thứ tự, điều kiện hiển thị hoặc giá sản phẩm.</p>
+
+  <h2>Liên hệ và xóa dữ liệu</h2>
+  <p>Đơn vị cung cấp ứng dụng: Tryvo – AI Virtual Try-On. Email hỗ trợ và yêu cầu quyền riêng tư: <a href="mailto:support.tryvo@gmail.com">support.tryvo@gmail.com</a>.</p>
+  <p>Người dùng có thể gửi yêu cầu trong ứng dụng tại Cá nhân → Tài khoản → Xóa tài khoản, hoặc xem <a href="account-deletion.html">trang hướng dẫn xóa tài khoản công khai</a>. Yêu cầu được xác minh để bảo vệ chủ tài khoản.</p>
+
+  <hr>
+  <h1 lang="en">Tryvo – AI Virtual Try-On Privacy Policy</h1>
+  <p lang="en"><strong>Last updated: August 12, 2026.</strong> Tryvo processes account, catalog, purchase, diagnostic, and user-selected photo data to provide virtual try-on, editing, wardrobe, and commerce features. Photos are uploaded only after the user requests a cloud feature. Tryvo does not sell personal data. Service providers include Supabase, Modal, Cloudflare R2, Google Play, and applicable on-device MediaPipe, TensorFlow Lite, and ONNX Runtime components. Completed Try-On jobs and stored result objects are scheduled for deletion after 30 days; verified deletion may remove them sooner where legally possible. Restricted transaction, safety, fraud, and dispute records may be retained only for applicable obligations. Users may request access, correction, export, or deletion. Contact <a href="mailto:support.tryvo@gmail.com">support.tryvo@gmail.com</a> or use the <a href="account-deletion.html">public account-deletion page</a>.</p>
+</body>
 </html>
