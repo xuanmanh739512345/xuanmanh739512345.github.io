@@ -19,16 +19,18 @@
   <main>
     <h1>Security verification</h1>
     <p>Complete this security check to continue.</p>
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAAD-ybNFMeEaSHKdM" data-size="normal" data-theme="light" data-appearance="always" data-callback="done" data-error-callback="failed" data-expired-callback="failed"></div>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAD-ybNFMeEaSHKdM" data-size="flexible" data-theme="light" data-appearance="always" data-callback="done" data-error-callback="failed" data-expired-callback="failed"></div>
     <p id="error"></p>
   </main>
   <script>
     const q = new URLSearchParams(location.search);
     const state = q.get('state') || '';
     const client = q.get('client') === 'debug' ? '&client=debug' : '';
+    const embedded = q.get('embedded') === '1';
     function done(token) {
       if (!/^[A-Za-z0-9._~-]{20,4096}$/.test(token) || !/^[A-Za-z0-9_-]{32,128}$/.test(state)) { failed(); return; }
-      location.replace('https://xuanmanh739512345.github.io/android/turnstile/callback/?state=' + encodeURIComponent(state) + '&token=' + encodeURIComponent(token) + client);
+      const callback = 'https://xuanmanh739512345.github.io/android/turnstile/callback/?state=' + encodeURIComponent(state) + '&token=' + encodeURIComponent(token) + client;
+      if (embedded) location.assign(callback); else location.replace(callback);
     }
     function failed() { document.getElementById('error').textContent = 'Verification failed. Reload and try again.'; }
   </script>
